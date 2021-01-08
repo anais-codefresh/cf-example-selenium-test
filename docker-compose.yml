@@ -1,7 +1,7 @@
 version: '2'
 services:
   test:
-    image: codefreshio/selenium-test
+    image: anaisurlichs/example-selenium-test:1.0.0
     depends_on:
       - selenium
     volumes:
@@ -11,6 +11,6 @@ services:
       GITHUB_PASSWORD: $GITHUB_PASSWORD
       URL: $URL
   selenium:
-    image: selenium/standalone-chrome:2.46.0
+    image: selenium/standalone-chrome:4.0.0
     ports:
       - 4444:4444

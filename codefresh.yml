@@ -1,4 +1,4 @@
-version: '1.0'
+version: '2.0'
 steps:
   build_image:
     title: Building Image
@@ -13,7 +13,7 @@ steps:
       version: '2'
       services:
         selenium:
-          image: selenium/standalone-chrome:2.46.0
+          image: selenium/standalone-chrome:4.0.0
           ports:
             - 4444:4444
     composition_candidates:
